@@ -1,102 +1,111 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #e8d7c6;
-    color: #5a4a42;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #FFF5E1;
+  color: #333;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: #fff;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #8B5E3B;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-    display: inline;
+nav a {
+  text-decoration: none;
+  color: #333;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #5a4a42;
-    font-weight: bold;
-}
-
-nav ul li a.active {
-    border-bottom: 2px solid #5a4a42;
-}
-
-.social-icons a {
-    margin-left: 10px;
-    color: #5a4a42;
-    text-decoration: none;
-}
-
-/* Hero Section */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    text-align: left;
-    background: #f6eee4;
+  display: flex;
+  padding: 40px;
+  gap: 40px;
 }
 
-.hero-content {
-    flex: 1;
+.hero-text {
+  flex: 1;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-    font-weight: bold;
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-.hero-content h1 span {
-    color: #a57c65;
+.hero-text p {
+  margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.buttons {
+  display: flex;
+  gap: 15px;
 }
 
 .btn {
-    padding: 10px 20px;
-    background: #a57c65;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #8B5E3B;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.hero-image img {
-    width: 400px;
-    border-radius: 10px;
+.btn-secondary {
+  background-color: #8B5E3B;
+  border: 2px solid white;
+  color: white;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+.hero-images {
+  display: flex;
+  gap: 20px;
+}
 
-    .hero-image img {
-        width: 100%;
-        margin-top: 100px;
+.hero-images img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
 }
+
+.instagram {
+  background-color:  #8B5E3B;  
+  color: white;
+  padding: 40px;
+  text-align: center;
 }
+
+.instagram-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.instagram-gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.planning {
+  padding: 40px;
+  text-align: center;
+}
+
+
+
+
+
+
